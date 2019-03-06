@@ -1,0 +1,75 @@
+@import 'mixin' ;
+
+.container {
+   @include gridcontainer; 
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*width: 300px;*/
+   
+    background-color: #0B0B61;
+    margin: 0;
+    h1 {
+        margin: 0px;
+        color: white;
+    }
+    
+}
+
+.mainpart {
+    display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 40 60%;
+    justify-content: space-between;
+    /* align-items: center;  */
+    font-family: 'Open Sans', sans-serif;
+.mainpart-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column-start: 1;      
+    flex-wrap: wrap;
+    background-color:white;
+    display: inline-block;
+     margin: 0;
+    }
+    .sizeblackhole {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+.flexbox{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    flex-direction: column;
+    background-color: #BDBDBD;
+    align-items: flex-end;
+    padding: 5px;
+    height: 156px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    .box {
+        width: 100%;
+     height: 50px;
+     border: 1px solid black; 
+     margin: 0;
+     color: white;
+ }
+}
+
+
+footer {  
+     @include footerstyle ;
+    // background-color: #0B0B61 ;
+    // margin: 0;
+    // color: grey; 
+    // height: 40px;
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    // grid-row-start: 3;
+    // grid-row-start: 4;
+
+}
+
