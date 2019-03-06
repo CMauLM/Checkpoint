@@ -1,0 +1,15 @@
+@mixin footerstyle () {
+    background-color: #0B0B61;
+    margin: 0;
+    color: grey;
+    height: 40px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-start: 4;
+}
+
+@mixin gridcontainer ()
+{ display: grid;   
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% 80% 10%;}
